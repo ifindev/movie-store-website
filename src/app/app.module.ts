@@ -16,6 +16,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { UserProfileComponent } from './views/user-profile/user-profile.component';
 import { CardComponent } from './utils/card/card.component';
 import { ModalComponent } from './utils/modal/modal.component';
+import { BreadcrumbComponent } from './utils/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ModalComponent } from './utils/modal/modal.component';
     FooterComponent,
     UserProfileComponent,
     CardComponent,
-    ModalComponent
+    ModalComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
