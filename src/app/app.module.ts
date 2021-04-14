@@ -13,6 +13,7 @@ import { MovieDashboardComponent } from './views/movie-dashboard/movie-dashboard
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { NavbarBfaComponent } from './layout/navbar-bfa/navbar-bfa.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { UserProfileComponent } from './views/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     MovieDashboardComponent,
     NavbarComponent,
     NavbarBfaComponent,
-    FooterComponent
+    FooterComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
