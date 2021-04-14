@@ -17,6 +17,7 @@ import { UserProfileComponent } from './views/user-profile/user-profile.componen
 import { CardComponent } from './utils/card/card.component';
 import { ModalComponent } from './utils/modal/modal.component';
 import { BreadcrumbComponent } from './utils/breadcrumb/breadcrumb.component';
+import { CartComponent } from './views/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BreadcrumbComponent } from './utils/breadcrumb/breadcrumb.component';
     UserProfileComponent,
     CardComponent,
     ModalComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
