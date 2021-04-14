@@ -10,6 +10,8 @@ import { MembershipChoiceComponent } from './views/membership-choice/membership-
 import { PacketChoiceComponent } from './views/packet-choice/packet-choice.component';
 import { MovieDetailComponent } from './views/movie-detail/movie-detail.component';
 import { MovieDashboardComponent } from './views/movie-dashboard/movie-dashboard.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { NavbarBfaComponent } from './layout/navbar-bfa/navbar-bfa.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MovieDashboardComponent } from './views/movie-dashboard/movie-dashboard
     MembershipChoiceComponent,
     PacketChoiceComponent,
     MovieDetailComponent,
-    MovieDashboardComponent
+    MovieDashboardComponent,
+    NavbarComponent,
+    NavbarBfaComponent
   ],
   imports: [
     BrowserModule,
