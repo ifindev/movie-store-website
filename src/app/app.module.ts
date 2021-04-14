@@ -15,6 +15,7 @@ import { NavbarBfaComponent } from './layout/navbar-bfa/navbar-bfa.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { UserProfileComponent } from './views/user-profile/user-profile.component';
 import { CardComponent } from './utils/card/card.component';
+import { ModalComponent } from './utils/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CardComponent } from './utils/card/card.component';
     NavbarBfaComponent,
     FooterComponent,
     UserProfileComponent,
-    CardComponent
+    CardComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
