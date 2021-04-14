@@ -21,7 +21,7 @@ Untuk menjalankan projek di localhost, lakukan langkah-langkah sebagai berikut:
 - Buka folder direktori. Jika menggunakan terminal, bisa dengan command `cd movie-store-website`.
 - Pada root directory, install dependencies yang dibutuhkan dengan menjalankan command `npm install`.
 - Pada root directory, jalankan command `ng serve --open`.
-- Buka projek di `http://localhost:4200/`` atau sesuai yang ada di terminal.
+- Buka projek di `http://localhost:4200/` atau sesuai yang ada di terminal.
 
 ## Copyright
 
