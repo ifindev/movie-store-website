@@ -9,6 +9,7 @@ import { SignupPageComponent } from './views/signup-page/signup-page.component';
 import { MembershipChoiceComponent } from './views/membership-choice/membership-choice.component';
 import { PacketChoiceComponent } from './views/packet-choice/packet-choice.component';
 import { MovieDetailComponent } from './views/movie-detail/movie-detail.component';
+import { MovieDashboardComponent } from './views/movie-dashboard/movie-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MovieDetailComponent } from './views/movie-detail/movie-detail.componen
     SignupPageComponent,
     MembershipChoiceComponent,
     PacketChoiceComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    MovieDashboardComponent
   ],
   imports: [
     BrowserModule,
