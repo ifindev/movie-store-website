@@ -1,3 +1,7 @@
+* {
+  color: #374151;
+}
 .navbar-brand {
   font-weight: 700;
+  color: #374151;
 }
