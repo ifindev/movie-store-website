@@ -14,6 +14,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { NavbarBfaComponent } from './layout/navbar-bfa/navbar-bfa.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { UserProfileComponent } from './views/user-profile/user-profile.component';
+import { CardComponent } from './utils/card/card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserProfileComponent } from './views/user-profile/user-profile.componen
     NavbarComponent,
     NavbarBfaComponent,
     FooterComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
