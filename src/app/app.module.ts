@@ -48,7 +48,10 @@ import { UserMovieComponent } from './views/user-movie/user-movie.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: LandingPageComponent }]),
+    RouterModule.forRoot([
+      { path: '', component: LandingPageComponent },
+      { path: 'login', component: LoginPageComponent },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
