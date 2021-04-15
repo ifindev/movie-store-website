@@ -16,7 +16,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">
-          {{ data.modalTitle }}
+          {{ modalData.modalTitle }}
         </h5>
         <button
           type="button"
@@ -27,8 +27,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        {{ data.modalBody }}
+      <div class="modal-body" *ngFor="let data of modalData.modalBody">
+        {{ data }}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary">Save changes</button>
