@@ -59,7 +59,7 @@ export class AuthService {
 
       if (!found) {
         return {
-          status: 202,
+          status: 203,
           msg: 'signup success',
         };
       } else {
