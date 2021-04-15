@@ -10,7 +10,7 @@
         Login dulu yuk...
       </h5>
 
-      <form [formGroup]="loginForm" class="mt-4">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="mt-4">
         <div class="form-group">
           <input
             type="email"

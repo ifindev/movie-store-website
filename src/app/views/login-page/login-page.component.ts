@@ -13,6 +13,13 @@ export class LoginPageComponent implements OnInit {
     password: '',
   });
 
+  onSubmit(): void {
+    const result: { status: number; msg: string } = this.authService.authLogin(
+      this.loginForm.value
+    );
+    console.warn(result);
+  }
+
   constructor(
     private authService: AuthService,
     private formBuilder: FormBuilder
