@@ -19,7 +19,11 @@ export class LoginPageComponent implements OnInit {
       this.loginForm.value
     );
     console.warn(result);
-    this.router.navigate(['/movie-dashboard']);
+    if (result.status === 202) {
+      this.router.navigate(['/movie-dashboard']);
+    } else {
+      this.router.navigate(['/login']);
+    }
   }
 
   constructor(
