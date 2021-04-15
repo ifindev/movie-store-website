@@ -51,6 +51,7 @@ import { UserMovieComponent } from './views/user-movie/user-movie.component';
     RouterModule.forRoot([
       { path: '', component: LandingPageComponent },
       { path: 'login', component: LoginPageComponent },
+      { path: 'daftar', component: SignupPageComponent },
     ]),
   ],
   providers: [],
