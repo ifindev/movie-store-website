@@ -20,15 +20,20 @@ export class SignupMobileComponent implements OnInit {
   });
 
   onSubmit(): void {
-    // TODO encrypt password dulu
-    // this.signupForm.value.password = bcrypt(this.signupForm.value.password);
-    console.warn('Pendaftaran kamu berhasil!', this.signupForm.value);
-    this.signupForm.reset();
+    const result: {
+      status: number;
+      msg: string;
+    } = this.authService.authLogin(this.signupForm.value);
+
+    if (result.status === 203) {
+      this.router.navigate(['/pilihan-paket']);
+    }
   }
 
   constructor(
     private authService: AuthService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}

@@ -24,11 +24,16 @@ export class SignupDesktopComponent implements OnInit {
       status: number;
       msg: string;
     } = this.authService.authLogin(this.signupForm.value);
+
+    if (result.status === 203) {
+      this.router.navigate(['/pilihan-paket']);
+    }
   }
 
   constructor(
     private authService: AuthService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
