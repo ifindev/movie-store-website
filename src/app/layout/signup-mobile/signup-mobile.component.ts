@@ -8,6 +8,9 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./signup-mobile.component.css'],
 })
 export class SignupMobileComponent implements OnInit {
+  signupError: boolean = false;
+  signupDataNotCompleteError: boolean = false;
+
   signupForm = this.formBuilder.group({
     namaLengkap: '',
     username: '',

@@ -8,6 +8,9 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./signup-desktop.component.css'],
 })
 export class SignupDesktopComponent implements OnInit {
+  signupError: boolean = false;
+  signupDataNotCompleteError: boolean = false;
+
   signupForm = this.formBuilder.group({
     namaLengkap: '',
     username: '',
