@@ -3,6 +3,10 @@
   color: #374151;
 }
 
+body {
+  padding-top: 65px;
+}
+
 a {
   color: #374151;
 }
