@@ -8,10 +8,10 @@ import { FormBuilder } from '@angular/forms';
 })
 export class SignupDesktopComponent implements OnInit {
   signupForm = this.formBuilder.group({
-    namaUser: '',
-    userName: '',
-    userEmail: '',
-    userPassword: '',
+    namaLengkap: '',
+    username: '',
+    email: '',
+    password: '',
   });
 
   onSubmit(): void {
