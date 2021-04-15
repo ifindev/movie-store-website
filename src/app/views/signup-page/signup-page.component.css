@@ -12,4 +12,9 @@ h5 {
 
 input {
   padding: 0.9em 0.5em;
+  font-size: 0.9em;
+}
+
+.btn {
+  font-size: 0.9em;
 }
