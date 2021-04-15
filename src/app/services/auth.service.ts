@@ -34,8 +34,8 @@ export class AuthService {
   /* Auth Sign Up */
   authSignup(userSignup: {
     namaLengkap: string;
-    email: string;
     username: string;
+    email: string;
     password: string;
   }): { status: number; msg: string } {
     /* Validate that all fields are filled */
