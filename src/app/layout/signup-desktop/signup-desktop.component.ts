@@ -8,11 +8,18 @@ import { FormBuilder } from '@angular/forms';
 })
 export class SignupDesktopComponent implements OnInit {
   signupForm = this.formBuilder.group({
-    namaLengkap: '',
-    username: '',
-    email: '',
-    password: '',
+    namaUser: '',
+    userName: '',
+    userEmail: '',
+    userPassword: '',
   });
+
+  onSubmit(): void {
+    // TODO encrypt password dulu
+    // this.signupForm.value.password = bcrypt(this.signupForm.value.password);
+    console.warn('Pendaftaran kamu berhasil!', this.signupForm.value);
+    this.signupForm.reset();
+  }
 
   constructor(private formBuilder: FormBuilder) {}
 
