@@ -10,7 +10,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginPageComponent implements OnInit {
   loginForm = this.formBuilder.group({
-    email: '',
+    username: '',
     password: '',
   });
 
