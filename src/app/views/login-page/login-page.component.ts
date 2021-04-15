@@ -8,6 +8,11 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
+  loginForm = this.formBuilder.group({
+    email: '',
+    password: '',
+  });
+
   constructor(
     private authService: AuthService,
     private formBuilder: FormBuilder
