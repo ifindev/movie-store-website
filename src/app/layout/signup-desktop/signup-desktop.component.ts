@@ -7,6 +7,13 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./signup-desktop.component.css'],
 })
 export class SignupDesktopComponent implements OnInit {
+  signupForm = this.formBuilder.group({
+    namaLengkap: '',
+    username: '',
+    email: '',
+    password: '',
+  });
+
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {}
