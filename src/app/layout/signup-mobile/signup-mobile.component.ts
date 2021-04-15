@@ -18,6 +18,8 @@ export class SignupMobileComponent implements OnInit {
   @Output() signupEvent: EventEmitter<object> = new EventEmitter();
 
   onSubmit(): void {
+    // TODO encrypt password dulu
+    // this.signupForm.value.password = bcrypt(this.signupForm.value.password);
     console.warn('Pendaftaran kamu berhasil!', this.signupForm.value);
     this.signupForm.reset();
   }
