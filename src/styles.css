@@ -20,17 +20,17 @@ a:hover {
   background-color: #e5e7eb;
 }
 
-.btn {
+.button {
   padding: 1em;
   font-size: 0.9em;
   border-radius: 10px;
   background-color: #374151;
 }
 
-.btn strong {
+.button strong {
   color: #ffffff;
 }
 
-.btn:hover {
+.button:hover {
   background-color: #4b5563;
 }
