@@ -7,6 +7,11 @@
   color: #374151;
 }
 
+.navbar-brand:hover,
+.nav-link strong:hover {
+  color: #4b5563;
+}
+
 .navbar-brand:focus,
 .navbar-brand:active {
   color: #374151;
