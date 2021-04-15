@@ -11,3 +11,7 @@ body {
 a {
   color: #374151;
 }
+
+.bg-gray {
+  background-color: #e5e7eb;
+}
