@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 
+import { usersData } from '../data/userDemoData';
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-
-  constructor() { }
+  constructor() {}
 }
