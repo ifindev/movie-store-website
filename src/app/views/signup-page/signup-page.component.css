@@ -5,16 +5,3 @@ h5 {
 .container {
   min-height: 110vh;
 }
-
-.btn {
-  padding: 0.9em 0;
-}
-
-input {
-  padding: 0.9em 0.5em;
-  font-size: 0.9em;
-}
-
-.btn {
-  font-size: 0.9em;
-}
