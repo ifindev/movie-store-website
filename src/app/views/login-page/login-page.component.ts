@@ -8,7 +8,10 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private formBuilder: FormBuilder
+  ) {}
 
   ngOnInit(): void {}
 }
