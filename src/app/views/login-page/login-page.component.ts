@@ -36,6 +36,9 @@ export class LoginPageComponent implements OnInit {
         this.router.navigate(['/movie-dashboard']);
       } else {
         this.loginError = true;
+        this.loginForm.reset();
+        this.loginForm.value.username = '';
+        this.loginForm.value.password = '';
         this.router.navigate(['/login']);
       }
     }
