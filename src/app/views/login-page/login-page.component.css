@@ -1,0 +1,23 @@
+.btn {
+  padding: 0.9em 0;
+}
+
+input {
+  padding: 0.9em;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+.btn {
+  font-size: 0.9em;
+  border-radius: 10px;
+  background-color: #374151;
+}
+
+.btn strong {
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #4b5563;
+}
