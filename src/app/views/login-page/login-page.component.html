@@ -1,4 +1,45 @@
 <div class="container">
-  <app-login-mobile></app-login-mobile>
-  <app-login-desktop></app-login-desktop>
+  <div
+    class="d-flex flex-column justify-content-center align-items-center"
+    style="height: 90vh"
+  >
+    <div class="px-2">
+      <h5>
+        <strong>Udah ga sabar pengen nonton?</strong> <br />
+        Login dulu yuk...
+      </h5>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="email..."
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="password..."
+          />
+        </div>
+        <button type="submit" class="btn btn-block bg-gray">
+          <strong>Siap Login!</strong>
+        </button>
+        <div class="mt-3">
+          <small>
+            Belum punya akun? Silahkan
+            <a [routerLink]="['/daftar']"> <strong>Daftar</strong> </a>
+          </small>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
