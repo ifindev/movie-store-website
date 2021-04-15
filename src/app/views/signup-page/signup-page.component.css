@@ -1,0 +1,15 @@
+h5 {
+  line-height: 1.6;
+}
+
+.container {
+  min-height: 110vh;
+}
+
+.btn {
+  padding: 0.9em 0;
+}
+
+input {
+  padding: 0.9em 0.5em;
+}
