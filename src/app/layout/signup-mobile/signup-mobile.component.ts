@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Output, EventEmitter } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 
@@ -15,8 +14,6 @@ export class SignupMobileComponent implements OnInit {
     email: '',
     password: '',
   });
-
-  @Output() signupEvent: EventEmitter<object> = new EventEmitter();
 
   onSubmit(): void {
     // TODO encrypt password dulu
