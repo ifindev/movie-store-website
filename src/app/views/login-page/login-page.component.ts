@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
+import { usersData } from '../../data/userDemoData';
 
 @Component({
   selector: 'app-login-page',
@@ -11,6 +12,13 @@ import { AuthService } from '../../services/auth.service';
 export class LoginPageComponent implements OnInit {
   loginError: boolean = false;
   loginNotProvidedError: boolean = false;
+
+  modalData = [];
+
+  usersDataModal: object = {
+    modalTitle: 'User data for demo',
+    modalBody: this.modalData,
+  };
 
   loginForm = this.formBuilder.group({
     username: '',
@@ -50,5 +58,11 @@ export class LoginPageComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    usersData.map((user) =>
+      this.modalData.push(
+        `[username: ${user.username}] [password: ${user.password}]`
+      )
+    );
+  }
 }
