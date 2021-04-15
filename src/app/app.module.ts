@@ -22,6 +22,7 @@ import { ModalComponent } from './utils/modal/modal.component';
 import { BreadcrumbComponent } from './utils/breadcrumb/breadcrumb.component';
 import { CartComponent } from './views/cart/cart.component';
 import { UserMovieComponent } from './views/user-movie/user-movie.component';
+import { SignupMobileComponent } from './layout/signup-mobile/signup-mobile.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { UserMovieComponent } from './views/user-movie/user-movie.component';
     BreadcrumbComponent,
     CartComponent,
     UserMovieComponent,
+    SignupMobileComponent,
   ],
   imports: [
     BrowserModule,
