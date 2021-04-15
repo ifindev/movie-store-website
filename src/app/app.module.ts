@@ -23,6 +23,7 @@ import { BreadcrumbComponent } from './utils/breadcrumb/breadcrumb.component';
 import { CartComponent } from './views/cart/cart.component';
 import { UserMovieComponent } from './views/user-movie/user-movie.component';
 import { SignupMobileComponent } from './layout/signup-mobile/signup-mobile.component';
+import { SignupDesktopComponent } from './layout/signup-desktop/signup-desktop.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SignupMobileComponent } from './layout/signup-mobile/signup-mobile.comp
     CartComponent,
     UserMovieComponent,
     SignupMobileComponent,
+    SignupDesktopComponent,
   ],
   imports: [
     BrowserModule,
