@@ -31,5 +31,45 @@ export class AuthService {
     }
   }
 
+  /* Auth Sign Up */
+  authSignup(userSignup: {
+    namaLengkap: string;
+    email: string;
+    username: string;
+    password: string;
+  }): { status: number; msg: string } {
+    /* Validate that all fields are filled */
+    if (
+      userSignup.namaLengkap == '' ||
+      userSignup.email == '' ||
+      userSignup.username == '' ||
+      userSignup.password == ''
+    ) {
+      return {
+        status: 502,
+        msg: 'missing data some data for signup',
+      };
+    } else {
+      /* Check availibility of username and email in database */
+      const found = usersData.find(
+        (user) =>
+          user.username === userSignup.username &&
+          user.email === userSignup.email
+      );
+
+      if (!found) {
+        return {
+          status: 202,
+          msg: 'signup success',
+        };
+      } else {
+        return {
+          status: 503,
+          msg: 'user with that email or username is already exist',
+        };
+      }
+    }
+  }
+
   constructor() {}
 }
