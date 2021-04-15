@@ -24,8 +24,6 @@ import { CartComponent } from './views/cart/cart.component';
 import { UserMovieComponent } from './views/user-movie/user-movie.component';
 import { SignupMobileComponent } from './layout/signup-mobile/signup-mobile.component';
 import { SignupDesktopComponent } from './layout/signup-desktop/signup-desktop.component';
-import { LoginMobileComponent } from './layout/login-mobile/login-mobile.component';
-import { LoginDesktopComponent } from './layout/login-desktop/login-desktop.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +46,6 @@ import { LoginDesktopComponent } from './layout/login-desktop/login-desktop.comp
     UserMovieComponent,
     SignupMobileComponent,
     SignupDesktopComponent,
-    LoginMobileComponent,
-    LoginDesktopComponent,
   ],
   imports: [
     BrowserModule,
