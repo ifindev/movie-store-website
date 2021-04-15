@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-signup-desktop',
@@ -15,13 +16,16 @@ export class SignupDesktopComponent implements OnInit {
   });
 
   onSubmit(): void {
-    // TODO encrypt password dulu
-    // this.signupForm.value.password = bcrypt(this.signupForm.value.password);
-    console.warn('Pendaftaran kamu berhasil!', this.signupForm.value);
-    this.signupForm.reset();
+    const result: {
+      status: number;
+      msg: string;
+    } = this.authService.authLogin(this.signupForm.value);
   }
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private authService: AuthService,
+    private formBuilder: FormBuilder
+  ) {}
 
   ngOnInit(): void {}
 }
