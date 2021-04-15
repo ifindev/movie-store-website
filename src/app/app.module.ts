@@ -57,6 +57,8 @@ import { SignupDesktopComponent } from './layout/signup-desktop/signup-desktop.c
       { path: 'login', component: LoginPageComponent },
       { path: 'daftar', component: SignupPageComponent },
       { path: 'pilihan-paket', component: PacketChoiceComponent },
+      { path: 'movie-dashboard', component: MovieDashboardComponent },
+      { path: 'cart', component: CartComponent },
     ]),
   ],
   providers: [],
