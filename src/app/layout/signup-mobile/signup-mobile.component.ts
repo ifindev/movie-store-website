@@ -17,6 +17,11 @@ export class SignupMobileComponent implements OnInit {
 
   @Output() signupEvent: EventEmitter<object> = new EventEmitter();
 
+  onSubmit(): void {
+    console.warn('Pendaftaran kamu berhasil!', this.signupForm.value);
+    this.signupForm.reset();
+  }
+
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {}
