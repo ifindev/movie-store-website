@@ -8,6 +8,13 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./signup-mobile.component.css'],
 })
 export class SignupMobileComponent implements OnInit {
+  signupForm = this.formBuilder.group({
+    namaLengkap: '',
+    username: '',
+    email: '',
+    password: '',
+  });
+
   @Output() signupEvent: EventEmitter<object> = new EventEmitter();
 
   constructor(private formBuilder: FormBuilder) {}
