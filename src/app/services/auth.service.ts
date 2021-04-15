@@ -10,12 +10,13 @@ export class AuthService {
 
   /* Login Auth */
   authLogin(userLogin: {
-    email: string;
+    username: string;
     password: string;
   }): { status: number; msg: string } {
     const found = usersData.find(
       (user) =>
-        user.email === userLogin.email && user.password === userLogin.password
+        user.username === userLogin.username &&
+        user.password === userLogin.password
     );
     if (found) {
       return {
