@@ -9,12 +9,13 @@
           <strong>Gabung sekarang...</strong> <br />
           Jadikan rumah serasa bioskop!
         </h4>
-        <form>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <input
               type="text"
               class="form-control"
-              id="namaLengkap"
+              id="namaUser"
+              formControlName="namaUser"
               placeholder="nama lengkap"
             />
           </div>
@@ -22,7 +23,8 @@
             <input
               type="text"
               class="form-control"
-              id="username"
+              id="userName"
+              formControlName="userName"
               placeholder="username"
             />
           </div>
@@ -30,7 +32,8 @@
             <input
               type="email"
               class="form-control"
-              id="email"
+              id="userEmail"
+              formControlName="userEmail"
               placeholder="email"
             />
           </div>
@@ -38,15 +41,12 @@
             <input
               type="password"
               class="form-control"
-              id="password"
+              id="userPassword"
+              formControlName="userPassword"
               placeholder="password"
             />
           </div>
-          <button
-            [routerLink]="['/pilihan-paket']"
-            type="submit"
-            class="button btn-block bg-gray"
-          >
+          <button type="submit" class="button btn-block bg-gray">
             <strong>Daftarkan saya!</strong>
           </button>
           <div class="mt-3">
