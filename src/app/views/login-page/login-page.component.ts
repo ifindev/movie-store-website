@@ -9,20 +9,35 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
+  loginError: boolean = false;
+  loginNotProvidedError: boolean = false;
+
   loginForm = this.formBuilder.group({
     username: '',
     password: '',
   });
 
   onSubmit(): void {
-    const result: { status: number; msg: string } = this.authService.authLogin(
-      this.loginForm.value
-    );
-    console.warn(result);
-    if (result.status === 202) {
-      this.router.navigate(['/movie-dashboard']);
+    console.log(this.loginForm.value);
+    if (
+      this.loginForm.value.username == '' ||
+      this.loginForm.value.password == ''
+    ) {
+      this.loginNotProvidedError = true;
+      this.loginError = false;
     } else {
-      this.router.navigate(['/login']);
+      this.loginNotProvidedError = false;
+      const result: {
+        status: number;
+        msg: string;
+      } = this.authService.authLogin(this.loginForm.value);
+      console.warn(result);
+      if (result.status === 202) {
+        this.router.navigate(['/movie-dashboard']);
+      } else {
+        this.loginError = true;
+        this.router.navigate(['/login']);
+      }
     }
   }
 
