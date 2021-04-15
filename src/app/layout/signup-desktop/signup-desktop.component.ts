@@ -23,10 +23,19 @@ export class SignupDesktopComponent implements OnInit {
     const result: {
       status: number;
       msg: string;
-    } = this.authService.authLogin(this.signupForm.value);
+    } = this.authService.authSignup(this.signupForm.value);
 
     if (result.status === 203) {
       this.router.navigate(['/pilihan-paket']);
+    } else if (result.status === 502) {
+      this.signupError = false;
+      this.signupDataNotCompleteError = true;
+    } else {
+      this.signupError = true;
+      this.signupDataNotCompleteError = false;
+      this.signupForm.reset();
+      this.signupForm.value.username = '';
+      this.signupForm.value.password = '';
     }
   }
 
