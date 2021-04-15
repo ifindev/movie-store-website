@@ -10,12 +10,13 @@
         Login dulu yuk...
       </h5>
 
-      <form class="mt-4">
+      <form [formGroup]="loginForm" class="mt-4">
         <div class="form-group">
           <input
             type="email"
             class="form-control"
             id="email"
+            formControlName="email"
             placeholder="email..."
           />
         </div>
@@ -24,14 +25,11 @@
             type="password"
             class="form-control"
             id="password"
+            formControlName="password"
             placeholder="password..."
           />
         </div>
-        <button
-          [routerLink]="['/movie-dashboard']"
-          type="submit"
-          class="btn btn-block bg-gray"
-        >
+        <button type="submit" class="btn btn-block bg-gray">
           <strong>Siap Login!</strong>
         </button>
         <app-modal></app-modal>
