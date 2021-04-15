@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 
@@ -18,11 +19,13 @@ export class LoginPageComponent implements OnInit {
       this.loginForm.value
     );
     console.warn(result);
+    this.router.navigate(['/movie-dashboard']);
   }
 
   constructor(
     private authService: AuthService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
