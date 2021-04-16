@@ -1,5 +1,15 @@
 <app-navbar-bfa></app-navbar-bfa>
 <div class="container mt-5" *ngIf="movie">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/movie-dashboard']">Movie Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <a [routerLink]="['/movie, movieId']"><strong>Movie Detail</strong></a>
+      </li>
+    </ol>
+  </nav>
   <h4>Movie Detail</h4>
   <hr />
   <p>
