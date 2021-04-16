@@ -9,6 +9,8 @@ input {
   margin-top: 1.5em;
 }
 
-.alert {
-  width: 380px;
+@media screen and (min-width: 992px) {
+  .alert {
+    width: 380px;
+  }
 }
