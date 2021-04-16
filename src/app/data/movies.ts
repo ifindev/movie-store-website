@@ -9,6 +9,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'action, war',
+    purchased: true,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'action, war, travelling',
+    purchased: false,
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'comedy, adventure, animation',
+    purchased: true,
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'adventure, comedy',
+    purchased: false,
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Adventure, Action',
+    purchased: true,
   },
   {
     id: 6,
@@ -54,6 +59,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Adventure, Action',
+    purchased: false,
   },
   {
     id: 7,
@@ -63,6 +69,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Action, Adventure, Comedy, Sci-Fi',
+    purchased: false,
   },
   {
     id: 8,
@@ -72,6 +79,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Sci-Fi, Action, Thriller',
+    purchased: false,
   },
   {
     id: 9,
@@ -81,6 +89,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Comedy, Adventure, Family',
+    purchased: false,
   },
   {
     id: 10,
@@ -99,6 +108,7 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Horror, Thriller',
+    purchased: false,
   },
   {
     id: 12,
@@ -108,5 +118,6 @@ export const movies = [
     description:
       'Lorem ipsum doler si amet incognito adakadabra, alhambra dota terpana nan luar biasa oh sip. Suspendisse cursus sagittis ex dignissim viverra. Fusce in quam sodales, vestibulum felis nec, faucibus diam.',
     genre: 'Adventure, Sci-Fi',
+    purchased: false,
   },
 ];
