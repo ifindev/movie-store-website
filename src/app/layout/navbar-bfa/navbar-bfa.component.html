@@ -21,7 +21,9 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active mt-1">
         <a [routerLink]="['/cart']" class="nav-link">
-          <span class="material-icons"> shopping_cart </span>1
+          <span class="material-icons"> shopping_cart </span>
+          <span *ngIf="moviesInCart; else elseBlock">{{ moviesInCart }}</span>
+          <ng-template #elseBlock>0</ng-template>
         </a>
       </li>
       <li class="nav-item active mt-1">
