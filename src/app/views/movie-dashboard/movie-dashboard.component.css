@@ -1,3 +1,8 @@
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+
 .movie-card-body {
   height: 70%;
   width: 100%;
