@@ -7,9 +7,11 @@ import { CartService } from '../../services/cart.service';
   styleUrls: ['./navbar-bfa.component.css'],
 })
 export class NavbarBfaComponent implements OnInit {
-  moviesInCart: number;
+  moviesInCart: any;
 
   constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.moviesInCart = this.cartService.getMoviesInCart().length;
+  }
 }
