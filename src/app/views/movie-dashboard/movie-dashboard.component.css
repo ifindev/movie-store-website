@@ -1,0 +1,12 @@
+.movie-card-body {
+  height: 70%;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #313a49;
+  color: #ffffff;
+}
+
+.movie-card-body p {
+  color: #ffffff;
+}
