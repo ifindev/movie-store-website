@@ -34,3 +34,9 @@ a:hover {
 .button:hover {
   background-color: #4b5563;
 }
+
+@media screen and (min-width: 768px) {
+  .alert {
+    width: 330px;
+  }
+}
