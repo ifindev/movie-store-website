@@ -1,2 +1,16 @@
 <app-navbar-bfa></app-navbar-bfa>
-<p>movie-detail works!</p>
+<div class="container mt-5" *ngIf="movie">
+  <h4>Movie Detail</h4>
+  <hr />
+  <p>
+    <strong>{{ movie.title }} </strong>
+  </p>
+  <p>
+    <small
+      ><strong>{{ movie.genre }}</strong></small
+    >
+  </p>
+  <p>
+    {{ movie.description }}
+  </p>
+</div>
