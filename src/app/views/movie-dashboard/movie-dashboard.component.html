@@ -33,8 +33,7 @@
             <p>IDR. {{ movie.price }}</p>
           </div>
           <button class="button btn btn-block mt-auto">
-            <strong *ngIf="!movie.purchased; else elseBlock">Beli Film</strong>
-            <ng-template #elseBlock> <strong>Nonton Film</strong></ng-template>
+            <strong>Detail Film</strong>
           </button>
         </div>
       </div>
