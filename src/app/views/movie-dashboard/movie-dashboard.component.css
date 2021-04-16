@@ -7,6 +7,11 @@
   color: #ffffff;
 }
 
+.movie-card-body:hover {
+  background-color: #4b5563;
+  cursor: pointer;
+}
+
 .movie-card-body p {
   color: #ffffff;
 }
