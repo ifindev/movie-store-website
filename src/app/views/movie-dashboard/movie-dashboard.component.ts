@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { movies } from '../../data/movies';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-movie-dashboard',
@@ -8,7 +9,7 @@ import { movies } from '../../data/movies';
 })
 export class MovieDashboardComponent implements OnInit {
   movies = movies;
-  constructor() {}
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {}
 }
