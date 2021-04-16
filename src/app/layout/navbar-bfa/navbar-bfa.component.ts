@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-navbar-bfa',
@@ -7,11 +6,9 @@ import { CartService } from '../../services/cart.service';
   styleUrls: ['./navbar-bfa.component.css'],
 })
 export class NavbarBfaComponent implements OnInit {
-  moviesInCart: any;
+  @Input() moviesInCart: number;
 
-  constructor(private cartService: CartService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.moviesInCart = this.cartService.getMoviesInCart().length;
-  }
+  ngOnInit(): void {}
 }
