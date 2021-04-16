@@ -60,7 +60,7 @@ import { MovieCardComponent } from './utils/movie-card/movie-card.component';
       { path: 'daftar', component: SignupPageComponent },
       { path: 'pilihan-paket', component: PacketChoiceComponent },
       { path: 'movie-dashboard', component: MovieDashboardComponent },
-      { path: 'movie-dashboard/:movieId', component: MovieDetailComponent },
+      { path: 'movie/:movieId', component: MovieDetailComponent },
       { path: 'user-movie', component: UserMovieComponent },
       { path: 'cart', component: CartComponent },
     ]),
