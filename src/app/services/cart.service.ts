@@ -7,7 +7,10 @@ export class CartService {
   movieCart = [];
 
   addToCart(movie) {
-    this.movieCart.push(movie);
+    const inCart = this.movieCart.find((item) => item.id === movie.id);
+    if (!inCart) {
+      this.movieCart.push(movie);
+    }
   }
 
   removeFromCart(movie) {
