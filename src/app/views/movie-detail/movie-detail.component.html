@@ -13,4 +13,8 @@
   <p>
     {{ movie.description }}
   </p>
+  <button class="button btn btn-block">
+    <strong *ngIf="!movie.purchased; else elseBlock">Beli Film</strong>
+    <ng-template #elseBlock> <strong>Nonton Film</strong></ng-template>
+  </button>
 </div>
