@@ -1,7 +1,7 @@
-export const memebrships = [
+export const membership = [
   {
     id: 1,
-    memebrship: 'Mobile',
+    membership: 'Mobile',
     price: 54000,
     numberOfScreens: 1,
     numberOfDeviceDownloads: 1,
@@ -13,7 +13,7 @@ export const memebrships = [
   },
   {
     id: 2,
-    memebrship: 'Basic',
+    membership: 'Basic',
     price: 120000,
     numberOfScreens: 1,
     numberOfDeviceDownloads: 1,
@@ -25,7 +25,7 @@ export const memebrships = [
   },
   {
     id: 3,
-    memebrship: 'Standard',
+    membership: 'Standard',
     price: 153000,
     numberOfScreens: 2,
     numberOfDeviceDownloads: 2,
@@ -37,7 +37,7 @@ export const memebrships = [
   },
   {
     id: 4,
-    memebrship: 'Premium',
+    membership: 'Premium',
     price: 186000,
     numberOfScreens: 4,
     numberOfDeviceDownloads: 4,
