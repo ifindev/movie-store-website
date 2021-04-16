@@ -1,3 +1,9 @@
+*,
+*:active,
+*:focus {
+  outline: none !important;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   color: #374151;
