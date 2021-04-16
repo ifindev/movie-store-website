@@ -46,6 +46,16 @@
               placeholder="password"
             />
           </div>
+          <div *ngIf="signupError" class="alert alert-danger" role="alert">
+            Email atau username sudah digunakan orang lain.
+          </div>
+          <div
+            *ngIf="signupDataNotCompleteError"
+            class="alert alert-danger"
+            role="alert"
+          >
+            Anda harus mengisi lengkap data untuk login!
+          </div>
           <button type="submit" class="button btn-block bg-gray">
             <strong>Daftarkan saya!</strong>
           </button>

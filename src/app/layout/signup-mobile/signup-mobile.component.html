@@ -50,6 +50,16 @@
                 formControlName="password"
               />
             </div>
+            <div *ngIf="signupError" class="alert alert-danger" role="alert">
+              Email atau username sudah digunakan orang lain.
+            </div>
+            <div
+              *ngIf="signupDataNotCompleteError"
+              class="alert alert-danger"
+              role="alert"
+            >
+              Anda harus mengisi lengkap data untuk login!
+            </div>
             <div class="mt-3">
               <button type="submit" class="button btn-block bg-gray">
                 <strong>Daftarkan saya!</strong>
