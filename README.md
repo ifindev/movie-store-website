@@ -1,5 +1,7 @@
 # Movie Store Website
 
+**Project live on: [Netlify](https://movie-store-ng.netlify.app/)**
+
 ## Keterangan Repository
 
 Repositori ini adalah implementasi kode frontend dari Movie Store Website yang telah didesain pada file [Figma ini](https://www.figma.com/file/bTfNSWux0iKoR9TjtgqUl8/Movie-Store-Website?node-id=0%3A1). Pada projek ini, framework yang saya gunakan adalah Angular untuk logic & manage data di frontend nya serta CSS Bootstrap 4 untuk styling komponen & layout. Untuk melihat desain database dari website ini, silahkan buka [repo berikut](https://github.com/ifindev/movie-store-db-schema).
