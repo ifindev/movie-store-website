@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -25,6 +25,17 @@ import { UserMovieComponent } from './views/user-movie/user-movie.component';
 import { SignupMobileComponent } from './layout/signup-mobile/signup-mobile.component';
 import { SignupDesktopComponent } from './layout/signup-desktop/signup-desktop.component';
 import { MovieCardComponent } from './utils/movie-card/movie-card.component';
+
+const routes: Routes = [
+  { path: '', component: LandingPageComponent },
+  { path: 'login', component: LoginPageComponent },
+  { path: 'daftar', component: SignupPageComponent },
+  { path: 'pilihan-paket', component: PacketChoiceComponent },
+  { path: 'movie-dashboard', component: MovieDashboardComponent },
+  { path: 'movie/:movieId', component: MovieDetailComponent },
+  { path: 'user-movie', component: UserMovieComponent },
+  { path: 'cart', component: CartComponent },
+];
 
 @NgModule({
   declarations: [
@@ -54,17 +65,9 @@ import { MovieCardComponent } from './utils/movie-card/movie-card.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: LandingPageComponent },
-      { path: 'login', component: LoginPageComponent },
-      { path: 'daftar', component: SignupPageComponent },
-      { path: 'pilihan-paket', component: PacketChoiceComponent },
-      { path: 'movie-dashboard', component: MovieDashboardComponent },
-      { path: 'movie/:movieId', component: MovieDetailComponent },
-      { path: 'user-movie', component: UserMovieComponent },
-      { path: 'cart', component: CartComponent },
-    ]),
+    RouterModule.forRoot(routes),
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
