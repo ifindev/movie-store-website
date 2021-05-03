@@ -1,6 +1,6 @@
 # Movie Store Website
 
-**Project live on: [Netlify](https://movie-store-ng.netlify.app/)**
+**Project live on: [movie-store-ng.netlify.app](https://movie-store-ng.netlify.app/)**
 
 ## Keterangan Repository
 
